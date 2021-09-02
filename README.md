@@ -1,4 +1,5 @@
-#GetPos-plugin 
+#GetPos-plugin
+
 documentation:
 team structure: pos [player_name]
 
