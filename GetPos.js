@@ -1,5 +1,12 @@
 mc.regConsoleCmd("pos","get pos",function(args){
-    pl = mc.getPlayer(args[0])
-    pos = pl.pos
-    log(pos)
+    let pl = mc.getPlayer(args[0])
+    if(pl == null){
+        log('Unable to get player!')
+    }else{
+        let ppos = pl.pos
+        let x = ppos.x
+        let y = ppos.y
+        let z = ppos.z
+        log('Player ' + args[0] + ' is at X:' + x + ', Y:' + y + ', Z:' + z)
+    }
 })
