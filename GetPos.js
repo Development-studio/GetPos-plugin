@@ -7,6 +7,7 @@ mc.regConsoleCmd("pos","get pos",function(args){
         let x = ppos.x
         let y = ppos.y
         let z = ppos.z
-        log('Player ' + args[0] + ' is at X:' + x + ', Y:' + y + ', Z:' + z)
+        let dimid = ppos.dimid
+        log('Player ' + args[0] + ' is at X:' + x + ', Y:' + y + ', Z:' + z + ', in dimid: ' + dimid)
     }
 })
